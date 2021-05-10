@@ -1,0 +1,4 @@
+{
+"hosts": ["unix:///var/run/docker.sock", "tcp://0.0.0.0:<%= node['docker']['daemonport'] %>"],
+"insecure-registries": ["<%= node['hostname'] %>.feenstra.io:5000"]
+}

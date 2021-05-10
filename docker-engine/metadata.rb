@@ -1,0 +1,6 @@
+name 'docker-engine'
+maintainer 'Matt Feenstra'
+maintainer_email 'matt.a.feenstra@gmail.com'
+license 'All Rights Reserved'
+description 'Installs/Configures a Docker (engine) client to run containers'
+version '0.1.0'

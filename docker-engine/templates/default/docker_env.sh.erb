@@ -1,0 +1,11 @@
+# THIS FILE IS MAINTAINED BY CHEF
+
+### Abbreviations for common Docker commands
+function dlogin { /usr/bin/docker exec -it "$1" /bin/bash; }
+export -f dlogin
+function dtail { /usr/bin/docker logs -f "$1"; }
+export -f dtail
+alias dps='docker-compose -f /home/<%= node['docker']['user'] %>/<%= node['docker']['rails_app'] %>/docker-compose.yml ps -a'
+alias dstop='cd /home/matt/marketmath && bundle exec rake dev:containers:stop'
+alias dls='curl -ik http://<%= node['docker']['registry'] %>/v2/_catalog'
+

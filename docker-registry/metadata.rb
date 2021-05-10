@@ -1,0 +1,6 @@
+name 'docker-registry'
+maintainer 'Matt Feenstra'
+maintainer_email 'matt.a.feenstra@gmail.com'
+license 'All Rights Reserved'
+description 'Installs/Configures a Docker Container Registry Server'
+version '0.1.0'
